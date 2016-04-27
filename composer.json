@@ -1,0 +1,24 @@
+{
+    "name": "benjamincrozat/laravel-package-boilerplate",
+    "description": "Dropbox driver for Laravel.",
+    "homepage": "https://github.com/benjamincrozat/laravel-dropbox-driver/",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Benjamin Crozat",
+            "email": "benjamin@croz.at"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/benjamincrozat/laravel-dropbox-driver/issues"
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "league/flysystem-dropbox": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BC\\LaravelDropboxDriver\\": "src/"
+        }
+    }
+}
