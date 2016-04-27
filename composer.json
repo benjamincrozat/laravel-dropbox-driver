@@ -1,7 +1,7 @@
 {
     "name": "benjamincrozat/laravel-package-boilerplate",
     "description": "Dropbox driver for Laravel.",
-    "homepage": "https://github.com/benjamincrozat/laravel-dropbox-driver/",
+    "homepage": "https://github.com/benjamincrozat/laravel-dropbox-driver",
     "license": "WTFPL",
     "authors": [
         {
