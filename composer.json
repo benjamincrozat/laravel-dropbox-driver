@@ -12,8 +12,14 @@
     "support": {
         "issues": "https://github.com/benjamincrozat/laravel-dropbox-driver/issues"
     },
+    "autoload": {
+        "psr-4": {
+            "BC\\LaravelDropboxDriver\\": "src"
+        }
+    },
     "require": {
         "php": ">=5.5.9",
+        "illuminate/support": "^5.2",
         "league/flysystem-dropbox": "^1.0"
     },
     "autoload": {
