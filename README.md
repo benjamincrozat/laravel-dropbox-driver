@@ -4,6 +4,8 @@ Dropbox driver for Laravel.
 
 ## Usage
 
+**Dealing with Dropbox for the first time? Here is the [link](https://www.dropbox.com/developers/apps/create) to create your first application and generate your app secret key and access token.**
+
 First, install it:
 ```php
 composer require benjamincrozat/laravel-dropbox-driver
