@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/benjamincrozat/laravel-dropbox-driver.svg?branch=master)](https://travis-ci.org/benjamincrozat/laravel-dropbox-driver)
+
 # Laravel Dropbox Driver
 
 Dropbox driver for Laravel.
