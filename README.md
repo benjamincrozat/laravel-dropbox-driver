@@ -24,7 +24,7 @@ Next, add the following in ```app/filesystems.php```:
 
     'dropbox' => [
         'driver' => 'dropbox',
-        'secret' => env('DROPBOX_SECRET'),
+        'app_secret' => env('DROPBOX_APP_SECRET'),
         'token' => env('DROPBOX_TOKEN'),
     ],
 
@@ -33,7 +33,7 @@ Next, add the following in ```app/filesystems.php```:
 
 Then, in your ```.env``` file:
 ```
-DROPBOX_SECRET=your_app_secret_key
+DROPBOX_APP_SECRET=your_app_secret_key
 DROPBOX_TOKEN=your_access_token
 ```
 
