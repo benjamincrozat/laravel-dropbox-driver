@@ -12,6 +12,11 @@
     "support": {
         "issues": "https://github.com/benjamincrozat/laravel-dropbox-driver/issues"
     },
+    "keywords": [
+        "laravel",
+        "driver",
+        "dropbox"
+    ],
     "autoload": {
         "psr-4": {
             "BC\\LaravelDropboxDriver\\": "src/"
