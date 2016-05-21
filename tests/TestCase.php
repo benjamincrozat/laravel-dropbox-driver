@@ -27,7 +27,7 @@ abstract class TestCase extends Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            BC\LaravelDropboxDriver\ServiceProvider::class,
+            BC\Laravel\DropboxDriver\ServiceProvider::class,
         ];
     }
 }

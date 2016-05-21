@@ -20,7 +20,7 @@ In your ```config/app.php```, add the service provider:
 ```php
 'providers' => [
 
-    BC\LaravelDropboxDriver\ServiceProvider::class,
+    BC\Laravel\DropboxDriver\ServiceProvider::class,
 
 ],
 ```

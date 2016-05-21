@@ -19,7 +19,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "BC\\LaravelDropboxDriver\\": "src/"
+            "BC\\Laravel\\DropboxDriver\\": "src/"
         }
     },
     "autoload-dev": {
@@ -33,7 +33,7 @@
         "league/flysystem-dropbox": "^1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.0",
+        "phpunit/phpunit": "5.0",
         "orchestra/testbench": "^3.2"
     }
 }

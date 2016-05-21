@@ -1,6 +1,6 @@
 <?php
 
-namespace BC\LaravelDropboxDriver;
+namespace BC\Laravel\DropboxDriver;
 
 use Storage;
 use League\Flysystem\Filesystem;
