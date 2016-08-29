@@ -5,8 +5,8 @@ namespace BC\Laravel\DropboxDriver;
 use Storage;
 use League\Flysystem\Filesystem;
 use Dropbox\Client as DropboxClient;
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use League\Flysystem\Dropbox\DropboxAdapter;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 class ServiceProvider extends BaseServiceProvider
 {
