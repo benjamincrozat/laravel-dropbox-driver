@@ -17,9 +17,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
         Storage::extend('dropbox', function ($app, $config) {
-            $client = new DropboxClient($config['token'], $config['app_secret']);
-
-            return new Filesystem(new DropboxAdapter($client));
+            return new Filesystem(
+                new DropboxAdapter(
+                    new DropboxClient($config['token'], $config['app_secret'])
+                )
+            );
         });
     }
 
