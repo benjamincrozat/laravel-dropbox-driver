@@ -12,8 +12,8 @@ abstract class TestCase extends Orchestra\Testbench\TestCase
     {
         $app['config']->set('filesystems.disks.dropbox', [
             'driver' => 'dropbox',
-            'app_secret' => 'app_secret',
-            'token' => 'token',
+            'app_secret' => env('DROPBOX_APP_SECRET'),
+            'token' => env('DROPBOX_TOKEN'),
         ]);
     }
 

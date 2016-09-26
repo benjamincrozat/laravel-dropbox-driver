@@ -1,19 +1,22 @@
 language: php
 
 php:
-  - 5.6
-  - 7.0
+    - 5.6
+    - 7.0
 
 env:
-  matrix:
-    - COMPOSER_FLAGS="--prefer-lowest"
-    - COMPOSER_FLAGS=""
+    global:
+        - secure: HHPkmxUjhMngMDQcF1GNbCkvzXFNs+93cnecLoFwuaAfV+MsX30/BpW8m/ksFtCli4O2JHU3BvKahk3CHZoa+tArYgoCG5sACrVe79xsJ71IgcB10z4EAMunhsjrh8C1l5pg3yGLp7+v5sLJOY5B0bM6HHEpWRrax5nlVk04j/PZcP9O082F2EDQKOEsexqjVJjqvBt9NkW8Y0UaspXklGNt0rzEc/A7ZC1KBPQn5svkaEeW8MW/A9+3r7GLmmunUyr2fpJAdaKL82VDG5XUu19S1n2sr9s3xgCGZid5UmyzFUAKylspJKqw9t0XPVWCGNOYRomBiO+KK3G9/Oovhdp1DWC+wX6BmmFX4y6SqWW6s8CZP5S44As3iqBNG1OXtizaIlCVeFpQnkR54FZLMQAPOEOpCAhn03jTOky4GJTa6g/yEj7Gv6VaNqOTQU29wCpp2QJwwYgOJL58C4ugAf+LnUDZji4zJpTgwmw1GiCXcItqlXMvkgSZvZXvuob0nHfIa69cY9g3YCBaNedBb3sZ0E8nssJ97pU1GSpnotWuPJBQEEXX9I0MeBSTbv7LQDA3e4+UJNLaxvM/3KgXYs+OFEOv0sDNVqPlZOjUA/i6WybZzjeQZ4JsCGO55FID8W/8nDNwt/gougfWT7FRrN9nmGFBo6Ipc0N+hsNYqpo=
+        - secure: oROCS7BlNAJTKOKEbFCnRRN+qbjot/1cvSqWbIzSJz0QuvUr6g1JYvtdk+NkNjnpAuVaDZIw5Vd9SUZZG460KiCDwlodiL2TNw7QKMcwINXQa5DzedPSwzsHDieRs4lruY0hEVNLMHxCjvQvCzyhu6MyuJyWBqQXJJGVY4hA22+hcmfdtgcPNNazq6DPU2If9T2leJwd4JcJyZQBJ3/2f3dWFzz0X+TeQbjAB+DUTpdDmoK+2u0odI86rRpIG9Jb48Hy0riISBNWESbsXC++/5VCwNjRmdVXCNhiEb8fIw5Sgi1E+/eeG74NI6TKPTPdQVOm4BDgeRwMQrcH9u3lQqTk7scxNUuAl5zuwbfQmd8GvzlIabRtTkRtZF/cX6/WWvOfL/+mIaRwu7qZMBZTgIkTu7/wq78Q82vpVtKYuXVheHRnetJ38bexR+dIzGihXtPID5RxXDsNEQxzikpgUJtV5VgjevGNHhKWPZ09QfC7Jm8wFrp+qQLHtVJr73jcavY4/mMcz23Sqd5L8zqF67eMZaQom33EHtnQ7vyw1iLDXd+I/Q7KtGBZ+YN1hQDqL6mWJft/Mf4P0HniUPfSbw0g59wbZmXkbxNqTu/FRrJ3lUFPFV4nOaRKNGhoK1INIx3/lJXfIa/yMB7RfsE2WMswYpDY01QnZc9MQSqk9Y0=
+    matrix:
+        - COMPOSER_FLAGS="--prefer-lowest"
+        - COMPOSER_FLAGS=""
 
 before_install:
-  - travis_retry composer self-update
+    - travis_retry composer self-update
 
 install:
-  - travis_retry composer update --prefer-source $PREFER_LOWEST
+    - travis_retry composer update --prefer-source $PREFER_LOWEST
 
 script:
-  - phpunit
+    - phpunit
