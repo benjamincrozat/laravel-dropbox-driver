@@ -3,8 +3,9 @@
 class DropboxDriverTest extends TestCase
 {
     /** @test */
-    public function it_adds_a_new_storage()
+    public function it_works()
     {
-        $this->assertInstanceOf('Illuminate\Filesystem\FilesystemAdapter', Storage::disk('dropbox'));
+        $this->assertTrue(Storage::disk('dropbox')->makeDirectory('test'));
+        $this->assertTrue(Storage::disk('dropbox')->deleteDirectory('test'));
     }
 }
