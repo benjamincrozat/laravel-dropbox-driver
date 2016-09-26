@@ -6,9 +6,8 @@ use Storage;
 use League\Flysystem\Filesystem;
 use Dropbox\Client as DropboxClient;
 use League\Flysystem\Dropbox\DropboxAdapter;
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class ServiceProvider extends BaseServiceProvider
+class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
      * Bootstrap the application services.
