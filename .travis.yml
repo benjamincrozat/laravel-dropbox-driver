@@ -20,4 +20,4 @@ install:
     - travis_retry composer update --prefer-source $PREFER_LOWEST
 
 script:
-    - phpunit
+    - php vendor/bin/phpunit
