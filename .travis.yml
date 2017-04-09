@@ -9,15 +9,12 @@ env:
     global:
         - secure: HHPkmxUjhMngMDQcF1GNbCkvzXFNs+93cnecLoFwuaAfV+MsX30/BpW8m/ksFtCli4O2JHU3BvKahk3CHZoa+tArYgoCG5sACrVe79xsJ71IgcB10z4EAMunhsjrh8C1l5pg3yGLp7+v5sLJOY5B0bM6HHEpWRrax5nlVk04j/PZcP9O082F2EDQKOEsexqjVJjqvBt9NkW8Y0UaspXklGNt0rzEc/A7ZC1KBPQn5svkaEeW8MW/A9+3r7GLmmunUyr2fpJAdaKL82VDG5XUu19S1n2sr9s3xgCGZid5UmyzFUAKylspJKqw9t0XPVWCGNOYRomBiO+KK3G9/Oovhdp1DWC+wX6BmmFX4y6SqWW6s8CZP5S44As3iqBNG1OXtizaIlCVeFpQnkR54FZLMQAPOEOpCAhn03jTOky4GJTa6g/yEj7Gv6VaNqOTQU29wCpp2QJwwYgOJL58C4ugAf+LnUDZji4zJpTgwmw1GiCXcItqlXMvkgSZvZXvuob0nHfIa69cY9g3YCBaNedBb3sZ0E8nssJ97pU1GSpnotWuPJBQEEXX9I0MeBSTbv7LQDA3e4+UJNLaxvM/3KgXYs+OFEOv0sDNVqPlZOjUA/i6WybZzjeQZ4JsCGO55FID8W/8nDNwt/gougfWT7FRrN9nmGFBo6Ipc0N+hsNYqpo=
         - secure: j9v3pe3UTr+XAlk/9p1+e9un3HWyCtpxpKo4RLXNqMTe9ihGHDIHC7tELFFgNUqipMOPt//bTTe3BwADKygA4tqyV5dlo41ruQwkc7nxxq8otb3qSGGPDgwukKwxl57Rkcv00xD/cXsBgHPK3BPwNE8OUGy5LFz/de5Le+IAGK2ZvRSb9BeOrUfwpW4k4NV1+Lx2HAkJ0yVyRo1A77yPnP5cq7shyVNT6HxjQ7dpS3wqjqa3jf1WvxXaIAHp+tLeA891z/8Tk1AgYhSMqBoattfAbMVoQ99e8zdEYXzKxOnUwYI9R1LFFDNPHPBBdak13qsCWwMb/7kcmSm9EL4cP/CXEjP2SlmTyat5i1L26FVoQ+GPY9cM+M97jRQZ5svLAukDZ0X2DDq86zEUNJ9oP4wt6EJZvTkFDH5jxI+Rlyzxd3QlJsSAWT9avp7gLc23IJByqsVPqgkNxs8Nb/6VgsH3FWyI3rCTJMgaISzrvtju/Dh4Q33Z/8ce4aKAWUbMoZ8lblpuhcQcKBJtbLCbgigePHcscg9h5G+asJgp2kGTbEYI+R6TI/QoUi7vid4BlAU/c7yGDzuKFNmK0FdZH7lFt7cXcaDFn8GCN8JtnANfnnIEHwa1jKOzVca8gopFcNQnhtFAJNAes7w0WjNmkoR1Io69SFbfNyda52ShaQU=
-    matrix:
-        - COMPOSER_FLAGS="--prefer-lowest"
-        - COMPOSER_FLAGS=""
 
 before_install:
     - travis_retry composer self-update
 
 install:
-    - travis_retry composer update --prefer-source $PREFER_LOWEST
+    - travis_retry composer update --prefer-source
 
 script:
     - php vendor/bin/phpunit
