@@ -12,10 +12,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
      * Bootstrap the application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot() : void
     {
         Storage::extend('dropbox', function ($app, $config) {
             return new Filesystem(
@@ -28,10 +26,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 
     /**
      * Register the application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register() : void
     {
         //
     }
