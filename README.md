@@ -10,7 +10,7 @@ Dropbox driver for Laravel.
 ## Installation
 
 ```php
-composer require benjamincrozat/laravel-dropbox-driver
+composer require benjamincrozat/laravel-dropbox-driver:^1.0
 ```
 
 ## Usage
