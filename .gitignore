@@ -1,4 +1,6 @@
 .DS_Store
 .env
+/.idea
+/.phpintel
 /vendor
 Thumbs.db
