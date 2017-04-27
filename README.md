@@ -11,7 +11,7 @@ Dropbox driver for Laravel.
 
 - PHP 7.0+
 
-If you're still on 5.6, you can just use the 1.x version.
+If you're still on 5.6, you can just use the [1.x version](https://github.com/benjamincrozat/laravel-dropbox-driver/tree/1).
 
 ## Installation
 
