@@ -37,7 +37,6 @@ Next, add the following in ```app/filesystems.php```:
 
     'dropbox' => [
         'driver' => 'dropbox',
-        'app_secret' => env('DROPBOX_APP_SECRET'),
         'token' => env('DROPBOX_TOKEN'),
     ],
 
@@ -46,11 +45,10 @@ Next, add the following in ```app/filesystems.php```:
 
 Then, in your ```.env``` file:
 ```
-DROPBOX_APP_SECRET=your_app_secret_key
 DROPBOX_TOKEN=your_access_token
 ```
 
-**Dealing with Dropbox for the first time? Here's the [link](https://www.dropbox.com/developers/apps/create) to create your first application and generate your app secret key and access token.**
+**Dealing with Dropbox for the first time? Here's the [link](https://www.dropbox.com/developers/apps/create) to create your first application and generate your access token.**
 
 ## License
 
