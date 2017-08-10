@@ -36,9 +36,11 @@
         "phpunit/phpunit": "^5.0",
         "orchestra/testbench": "^3.0"
     },
-    "laravel": {
-        "providers": [
-            "BC\\Laravel\\DropboxDriver\\ServiceProvider"
-        ]
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BC\\Laravel\\DropboxDriver\\ServiceProvider"
+            ]
+        }
     }
 }
