@@ -7,7 +7,6 @@ use League\Flysystem\Filesystem;
 use Spatie\Dropbox\Client as DropboxClient;
 use Spatie\FlysystemDropbox\DropboxAdapter;
 
-
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     /**
