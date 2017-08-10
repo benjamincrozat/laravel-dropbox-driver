@@ -21,7 +21,7 @@ composer require benjamincrozat/laravel-dropbox-driver
 
 ## Usage
 
-In your ```config/app.php```, add the service provider:
+If you're on Laravel 5.4 or older, add the service provider in your ```config/app.php``` file:
 
 ```php
 'providers' => [
