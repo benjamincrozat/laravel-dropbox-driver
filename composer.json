@@ -29,12 +29,11 @@
     },
     "require": {
         "php": ">=7.0",
-        "laravel/framework": "^5.0",
-        "spatie/flysystem-dropbox": "^1.0"
+        "spatie/flysystem-dropbox": "~1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.0",
-        "orchestra/testbench": "^3.0"
+        "phpunit/phpunit": "~5.7|~6.0",
+        "orchestra/testbench": "~3.3|~3.4|~3.5"
     },
     "extra": {
         "laravel": {
@@ -42,5 +41,7 @@
                 "BC\\Laravel\\DropboxDriver\\ServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
