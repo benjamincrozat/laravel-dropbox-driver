@@ -41,7 +41,5 @@
                 "BC\\Laravel\\DropboxDriver\\ServiceProvider"
             ]
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
