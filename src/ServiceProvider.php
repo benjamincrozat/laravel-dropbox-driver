@@ -22,12 +22,4 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             );
         });
     }
-
-    /**
-     * Register the application services.
-     */
-    public function register()
-    {
-        //
-    }
 }
