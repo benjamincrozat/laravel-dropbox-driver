@@ -2,5 +2,6 @@
 .env
 /.idea
 /.phpintel
+/composer.lock
 /vendor
 Thumbs.db
