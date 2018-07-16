@@ -41,5 +41,12 @@
                 "BC\\Laravel\\DropboxDriver\\ServiceProvider"
             ]
         }
-    }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
