@@ -11,8 +11,6 @@ Dropbox driver for Laravel.
 
 - PHP 7.1+
 
-If you're still on 5.6/7.0, you can just use the [1.x version](https://github.com/benjamincrozat/laravel-dropbox-driver/tree/1).
-
 ## Installation
 
 ```php
@@ -32,6 +30,7 @@ If you're on Laravel 5.4 or older, add the service provider in your ```config/ap
 ```
 
 Next, add the following in ```app/filesystems.php```:
+
 ```php
 'disks' => [
 
