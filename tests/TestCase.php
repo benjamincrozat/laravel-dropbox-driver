@@ -1,15 +1,13 @@
 <?php
 
-namespace BC\Laravel\DropboxDriver\Tests;
-
 use Illuminate\Foundation\Application;
 
-abstract class TestCase extends \Orchestra\Testbench\TestCase
+abstract class TestCase extends Orchestra\Testbench\TestCase
 {
     protected function getEnvironmentSetUp($app)
     {
         if (file_exists(__DIR__ . '/../.env')) {
-            (new \Dotenv\Dotenv(__DIR__ . '/..'))->load();
+            (new Dotenv\Dotenv(__DIR__ . '/..'))->load();
         }
 
         $app['config']->set('filesystems.disks.dropbox', [
@@ -21,7 +19,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \BC\Laravel\DropboxDriver\ServiceProvider::class,
+            BC\Laravel\DropboxDriver\ServiceProvider::class,
         ];
     }
 }
