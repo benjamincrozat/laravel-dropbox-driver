@@ -32,8 +32,8 @@
         "spatie/flysystem-dropbox": "^1.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.0|^7.0",
-        "orchestra/testbench": "^3.0"
+        "phpunit/phpunit": "6.*|7.*",
+        "orchestra/testbench": "3.*"
     },
     "extra": {
         "laravel": {
