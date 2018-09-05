@@ -4,10 +4,6 @@ php:
     - 7.1
     - 7.2
 
-env:
-    global:
-        - secure: j9v3pe3UTr+XAlk/9p1+e9un3HWyCtpxpKo4RLXNqMTe9ihGHDIHC7tELFFgNUqipMOPt//bTTe3BwADKygA4tqyV5dlo41ruQwkc7nxxq8otb3qSGGPDgwukKwxl57Rkcv00xD/cXsBgHPK3BPwNE8OUGy5LFz/de5Le+IAGK2ZvRSb9BeOrUfwpW4k4NV1+Lx2HAkJ0yVyRo1A77yPnP5cq7shyVNT6HxjQ7dpS3wqjqa3jf1WvxXaIAHp+tLeA891z/8Tk1AgYhSMqBoattfAbMVoQ99e8zdEYXzKxOnUwYI9R1LFFDNPHPBBdak13qsCWwMb/7kcmSm9EL4cP/CXEjP2SlmTyat5i1L26FVoQ+GPY9cM+M97jRQZ5svLAukDZ0X2DDq86zEUNJ9oP4wt6EJZvTkFDH5jxI+Rlyzxd3QlJsSAWT9avp7gLc23IJByqsVPqgkNxs8Nb/6VgsH3FWyI3rCTJMgaISzrvtju/Dh4Q33Z/8ce4aKAWUbMoZ8lblpuhcQcKBJtbLCbgigePHcscg9h5G+asJgp2kGTbEYI+R6TI/QoUi7vid4BlAU/c7yGDzuKFNmK0FdZH7lFt7cXcaDFn8GCN8JtnANfnnIEHwa1jKOzVca8gopFcNQnhtFAJNAes7w0WjNmkoR1Io69SFbfNyda52ShaQU=
-
 before_install:
     - travis_retry composer self-update
 
