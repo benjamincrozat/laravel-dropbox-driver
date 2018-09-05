@@ -1,7 +1,5 @@
 <?php
 
-namespace BC\Laravel\DropboxDriver\Tests;
-
 use Illuminate\Support\Facades\Storage;
 
 class DropboxDriverTest extends TestCase
