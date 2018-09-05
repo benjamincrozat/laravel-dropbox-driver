@@ -23,9 +23,9 @@
         }
     },
     "autoload-dev": {
-        "psr-4": {
-            "BC\\Laravel\\DropboxDriver\\Tests\\": "tests"
-        }
+        "classmap": [
+            "tests"
+        ]
     },
     "require": {
         "php": ">=7.1",
