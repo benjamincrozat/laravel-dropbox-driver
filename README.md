@@ -36,7 +36,7 @@ Next, add the following in ```app/filesystems.php```:
 
     'dropbox' => [
         'driver' => 'dropbox',
-        'token' => env('DROPBOX_TOKEN'),
+        'token'  => env('DROPBOX_TOKEN'),
     ],
 
 ],
