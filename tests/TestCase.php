@@ -6,7 +6,7 @@ use Illuminate\Foundation\Application;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
-    protected function getEnvironmentSetUp(Application $app)
+    protected function getEnvironmentSetUp($app)
     {
         if (file_exists(__DIR__ . '/../.env')) {
             (new \Dotenv\Dotenv(__DIR__ . '/..'))->load();
@@ -18,7 +18,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
         ]);
     }
 
-    protected function getPackageProviders(Application $app)
+    protected function getPackageProviders($app)
     {
         return [
             \BC\Laravel\DropboxDriver\ServiceProvider::class,
