@@ -15,7 +15,7 @@ before_install:
     - travis_retry composer self-update
 
 install:
-    - travis_retry composer install -n --prefer-dist
+    - travis_retry composer install -n --no-suggest --prefer-dist
 
 script:
     - php vendor/bin/phpunit
