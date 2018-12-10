@@ -1,7 +1,7 @@
 .DS_Store
 .env
-/.idea
-/.phpintel
-/composer.lock
-/vendor
+.idea
+.phpintel
+composer.lock
 Thumbs.db
+vendor
