@@ -2,47 +2,58 @@ language: php
 
 matrix:
     include:
-        - php:
-            - 7.1
-            - 7.2
-            - 7.3
-            - nightly
+        - php: 7.1
           env: TESTBENCH_VERSION=3.1.*
-        - php:
-            - 7.1
-            - 7.2
-            - 7.3
-            - nightly
+        - php: 7.1
           env: TESTBENCH_VERSION=3.2.*
-        - php:
-            - 7.1
-            - 7.2
-            - 7.3
-            - nightly
+        - php: 7.1
           env: TESTBENCH_VERSION=3.3.*
-        - php:
-            - 7.1
-            - 7.2
-            - 7.3
-            - nightly
+        - php: 7.1
           env: TESTBENCH_VERSION=3.4.*
-        - php:
-            - 7.1
-            - 7.2
-            - 7.3
-            - nightly
+        - php: 7.1
           env: TESTBENCH_VERSION=3.5.*
-        - php:
-            - 7.1
-            - 7.2
-            - 7.3
-            - nightly
+        - php: 7.1
           env: TESTBENCH_VERSION=3.6.*
-        - php:
-            - 7.1
-            - 7.2
-            - 7.3
-            - nightly
+        - php: 7.1
+        - php: 7.2
+          env: TESTBENCH_VERSION=3.1.*
+        - php: 7.2
+          env: TESTBENCH_VERSION=3.2.*
+        - php: 7.2
+          env: TESTBENCH_VERSION=3.3.*
+        - php: 7.2
+          env: TESTBENCH_VERSION=3.4.*
+        - php: 7.2
+          env: TESTBENCH_VERSION=3.5.*
+        - php: 7.2
+          env: TESTBENCH_VERSION=3.6.*
+        - php: 7.2
+        - php: 7.3
+          env: TESTBENCH_VERSION=3.1.*
+        - php: 7.3
+          env: TESTBENCH_VERSION=3.2.*
+        - php: 7.3
+          env: TESTBENCH_VERSION=3.3.*
+        - php: 7.3
+          env: TESTBENCH_VERSION=3.4.*
+        - php: 7.3
+          env: TESTBENCH_VERSION=3.5.*
+        - php: 7.3
+          env: TESTBENCH_VERSION=3.6.*
+        - php: 7.3
+        - php: nightly
+          env: TESTBENCH_VERSION=3.1.*
+        - php: nightly
+          env: TESTBENCH_VERSION=3.2.*
+        - php: nightly
+          env: TESTBENCH_VERSION=3.3.*
+        - php: nightly
+          env: TESTBENCH_VERSION=3.4.*
+        - php: nightly
+          env: TESTBENCH_VERSION=3.5.*
+        - php: nightly
+          env: TESTBENCH_VERSION=3.6.*
+        - php: nightly
     fast_finish: true
     allow_failures:
         - php: nightly
