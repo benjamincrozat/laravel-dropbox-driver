@@ -25,4 +25,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             return new \League\Flysystem\Filesystem($adapter);
         });
     }
+
+    public function register()
+    {
+        //
+    }
 }
