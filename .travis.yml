@@ -4,11 +4,17 @@ matrix:
     include:
         # PHP 7.1 & Laravel 5.1+
         - php: 7.1
-          env: TESTBENCH_VERSION=3.1.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.1.*
         - php: 7.1
-          env: TESTBENCH_VERSION=3.2.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.2.*
         - php: 7.1
-          env: TESTBENCH_VERSION=3.3.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.3.*
         - php: 7.1
           env: TESTBENCH_VERSION=3.4.*
         - php: 7.1
@@ -19,11 +25,17 @@ matrix:
           env:
         # PHP 7.2 & Laravel 5.1+
         - php: 7.2
-          env: TESTBENCH_VERSION=3.1.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.1.*
         - php: 7.2
-          env: TESTBENCH_VERSION=3.2.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.2.*
         - php: 7.2
-          env: TESTBENCH_VERSION=3.3.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.3.*
         - php: 7.2
           env: TESTBENCH_VERSION=3.4.*
         - php: 7.2
@@ -34,11 +46,17 @@ matrix:
           env:
         # PHP 7.3 & Laravel 5.1+
         - php: 7.3
-          env: TESTBENCH_VERSION=3.1.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.1.*
         - php: 7.3
-          env: TESTBENCH_VERSION=3.2.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.2.*
         - php: 7.3
-          env: TESTBENCH_VERSION=3.3.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.3.*
         - php: 7.3
           env: TESTBENCH_VERSION=3.4.*
         - php: 7.3
@@ -49,11 +67,17 @@ matrix:
           env:
         # PHP Nightly & Laravel 5.1+
         - php: nightly
-          env: TESTBENCH_VERSION=3.1.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.1.*
         - php: nightly
-          env: TESTBENCH_VERSION=3.2.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.2.*
         - php: nightly
-          env: TESTBENCH_VERSION=3.3.*
+          env:
+            - PHPUNIT_VERSION=5.*
+            - TESTBENCH_VERSION=3.3.*
         - php: nightly
           env: TESTBENCH_VERSION=3.4.*
         - php: nightly
