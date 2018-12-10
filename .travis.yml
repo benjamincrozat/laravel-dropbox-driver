@@ -62,7 +62,7 @@ before_install:
     - travis_retry composer self-update
 
 install:
-    - if [ ${TESTBENCH_VERSION} ]; then travis_retry composer require "orchestra/testbench:${TESTBENCH_VERSION}" --no-update; fi
+    - if [ $TESTBENCH_VERSION ]; then travis_retry composer require "orchestra/testbench:${TESTBENCH_VERSION}" --no-update fi
     - travis_retry composer install -n --no-suggest --prefer-dist
 
 script:
