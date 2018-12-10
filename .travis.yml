@@ -7,6 +7,13 @@ php:
     - nightly
 
 matrix:
+    include:
+        - env: TESTBENCH_VERSION=3.1.*
+        - env: TESTBENCH_VERSION=3.2.*
+        - env: TESTBENCH_VERSION=3.3.*
+        - env: TESTBENCH_VERSION=3.4.*
+        - env: TESTBENCH_VERSION=3.5.*
+        - env: TESTBENCH_VERSION=3.6.*
     fast_finish: true
     allow_failures:
         - php: nightly
@@ -15,6 +22,7 @@ before_install:
     - travis_retry composer self-update
 
 install:
+    - travis_retry composer require "orchestra/testbench:${TESTBENCH_VERSION}" --no-update
     - travis_retry composer install -n --no-suggest --prefer-dist
 
 script:
