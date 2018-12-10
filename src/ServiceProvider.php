@@ -26,6 +26,9 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         });
     }
 
+    /**
+     * Voluntarily empty, because it was an abstract method in Laravel 5.2 and below.
+     */
     public function register()
     {
         //
