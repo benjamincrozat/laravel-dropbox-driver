@@ -3,8 +3,8 @@
 namespace BC\Laravel\DropboxDriver;
 
 /**
- * Adding a new disk in the storage is pretty easy. The only thing
- * I did were to copy & paste code from the doc & made it easy:
+ * Adding a new disk in the storage is pretty easy. The only thing I
+ * did were to copy & paste code from the doc & made it a package:
  * https://laravel.com/docs/filesystem#custom-filesystems
  */
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
@@ -20,7 +20,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             // thanks to an adapter made by Spatie as usual.
             $adapter = new \Spatie\FlysystemDropbox\DropboxAdapter($client);
 
-            // Then, we return a new Flysystem instance,
+            // Then, we return a new Flysystem instance
             // initialized with the Dropbox adapter.
             return new \League\Flysystem\Filesystem($adapter);
         });
