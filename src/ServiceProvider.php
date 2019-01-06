@@ -3,7 +3,7 @@
 namespace BC\Laravel\DropboxDriver;
 
 /**
- * Adding a new disk in the storage is pretty easy. The only thing I
+ * Adding a new disk in the storage is pretty easy. The only things I
  * did was to copy & paste code from the doc & made it a package:
  * https://laravel.com/docs/filesystem#custom-filesystems
  */
