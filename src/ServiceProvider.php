@@ -16,9 +16,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             // which is in charge of making requests to the service.
             $client = new \Spatie\Dropbox\Client($config['token']);
 
+            //Specify a root path for the dropbox adapter
+            $pathPrefix = isset($config['path_prefix']) ? $config['path_prefix'] : '';
+
             // Let's teach Flysystem to interact with Dropdox,
             // thanks to an adapter made by Spatie as usual.
-            $adapter = new \Spatie\FlysystemDropbox\DropboxAdapter($client);
+            $adapter = new \Spatie\FlysystemDropbox\DropboxAdapter($client, $pathPrefix);
 
             // Then, we return a new Flysystem instance
             // initialized with the Dropbox adapter.

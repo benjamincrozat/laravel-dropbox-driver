@@ -14,4 +14,23 @@ class DropboxDriverTest extends TestCase
         // Dropbox, since spatie/flysystem-dropbox does it.
         $this->assertInstanceOf(Illuminate\Filesystem\FilesystemAdapter::class, Storage::disk('dropbox'));
     }
+
+    /** @test */
+    public function it_specifes_a_path_prefix_for_dropbox()
+    {
+        config(['filesystems.disks.dropbox.token' => '']);
+        config(['filesystems.disks.dropbox.path_prefix' => 'path/to/rootFolder']);
+
+        $adapter = Storage::disk('dropbox')->getAdapter();
+        $this->assertEquals('path/to/rootFolder/', $adapter->getPathPrefix());
+    }
+
+    /** @test */
+    public function it_allows_for_absence_of_path_prefix()
+    {
+        config(['filesystems.disks.dropbox.token' => '']);
+
+        $adapter = Storage::disk('dropbox')->getAdapter();
+        $this->assertNull($adapter->getPathPrefix());
+    }
 }
