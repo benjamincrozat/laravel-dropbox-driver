@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/benjamincrozat/laravel-dropbox-driver.svg?branch=master)](https://travis-ci.org/benjamincrozat/laravel-dropbox-driver)
+[![Test](https://github.com/benjamincrozat/laravel-dropbox-driver/actions/workflows/test.yml/badge.svg)](https://github.com/benjamincrozat/laravel-dropbox-driver/actions/workflows/test.yml)
 [![Latest Stable Version](https://poser.pugx.org/benjamincrozat/laravel-dropbox-driver/v/stable)](https://packagist.org/packages/benjamincrozat/laravel-dropbox-driver)
 [![License](https://poser.pugx.org/benjamincrozat/laravel-dropbox-driver/license)](https://packagist.org/packages/benjamincrozat/laravel-dropbox-driver)
 [![Total Downloads](https://poser.pugx.org/benjamincrozat/laravel-dropbox-driver/downloads)](https://packagist.org/packages/benjamincrozat/laravel-dropbox-driver)
@@ -22,7 +22,7 @@ composer require benjamincrozat/laravel-dropbox-driver
 
 ## Usage
 
-If you're on Laravel 5.4 or older, add the service provider in your ```config/app.php``` file:
+If you're on Laravel 5.4 and below, add the service provider in your ```config/app.php``` file:
 
 ```php
 'providers' => [
@@ -46,6 +46,7 @@ Next, add the following in ```app/filesystems.php```:
 ```
 
 Then, in your ```.env``` file:
+
 ```
 DROPBOX_TOKEN=your_access_token
 ```
