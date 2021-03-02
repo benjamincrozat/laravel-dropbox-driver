@@ -2,6 +2,7 @@
 .env
 .idea
 .phpintel
+.phpunit.result.cache
 composer.lock
 Thumbs.db
 vendor
