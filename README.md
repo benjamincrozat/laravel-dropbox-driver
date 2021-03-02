@@ -11,7 +11,7 @@ Adding a new disk in the storage is pretty easy. The only things I did were to c
 
 ## Requirements
 
-- PHP 7.1+
+- PHP 7.0+
 - Laravel 5.1+
 
 ## Installation

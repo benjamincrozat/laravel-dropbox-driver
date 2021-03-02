@@ -2,6 +2,8 @@
 
 namespace BC\Laravel\DropboxDriver;
 
+use Illuminate\Support\Facades\Storage;
+
 /**
  * Adding a new disk in the storage is pretty easy. The only things I
  * did was to copy & paste code from the doc & made it a package:
@@ -11,7 +13,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     public function boot()
     {
-        \Storage::extend('dropbox', function ($app, $config) {
+        Storage::extend('dropbox', function ($app, $config) {
             // Create a new instance of the Dropbox client from Spatie,
             // which is in charge of making requests to the service.
             $client = new \Spatie\Dropbox\Client($config['token']);
