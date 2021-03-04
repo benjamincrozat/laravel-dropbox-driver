@@ -7,7 +7,7 @@
 
 Dropbox driver for Laravel.
 
-Adding a new disk in the storage is pretty easy. The only things I did were to copy and paste code from the documentation and made it a package: https://laravel.com/docs/filesystem#custom-filesystems
+Adding a new disk in the storage is pretty easy. The only thing I did was to copy and paste code from the documentation and made it a package: https://laravel.com/docs/filesystem#custom-filesystems
 
 ## Requirements
 
