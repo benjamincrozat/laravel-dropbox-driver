@@ -40,6 +40,7 @@ Next, add the following in ```app/filesystems.php```:
     'dropbox' => [
         'driver' => 'dropbox',
         'token'  => env('DROPBOX_TOKEN'),
+        'path_prefix' => env('DROPBOX_PATH_PREFIX', ''),
     ],
 
 ],
@@ -49,7 +50,10 @@ Then, in your ```.env``` file:
 
 ```
 DROPBOX_TOKEN=your_access_token
+DROPBOX_PATH_PREFIX=path/to/folder
 ```
+
+The path_prefix is an optional setting to make the app use a specific folder in the dropbox app as the root folder for the laravel disk. If you omit it the root folder of the dropbox app will be used.
 
 **Dealing with Dropbox for the first time? Here's the [link](https://www.dropbox.com/developers/apps/create) to create your first application and generate your access token.**
 
