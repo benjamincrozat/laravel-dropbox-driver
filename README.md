@@ -3,4 +3,10 @@
 [![License](https://poser.pugx.org/benjamincrozat/laravel-dropbox-driver/license)](https://packagist.org/packages/benjamincrozat/laravel-dropbox-driver)
 [![Total Downloads](https://poser.pugx.org/benjamincrozat/laravel-dropbox-driver/downloads)](https://packagist.org/packages/benjamincrozat/laravel-dropbox-driver)
 
-Documentation and license informations are available here: [Laravel Dropbox Driver package: how to use it](https://benjamincrozat.com/laravel-dropbox-driver)
+## Documentation
+
+The documentation is available here: [Laravel Dropbox Driver package: how to use it](https://benjamincrozat.com/laravel-dropbox-driver)
+
+## License
+
+[WTFPL](http://www.wtfpl.net/about/)
