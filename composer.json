@@ -1,51 +1,60 @@
 {
     "name": "benjamincrozat/laravel-dropbox-driver",
-    "description": "Dropbox driver for Laravel.",
+    "description": "Dropbox storage driver for Laravel.",
     "homepage": "https://github.com/benjamincrozat/laravel-dropbox-driver",
     "license": "WTFPL",
     "authors": [
         {
             "name": "Benjamin Crozat",
-            "email": "benjamincrozat@me.com"
+            "email": "hello@benjamincrozat.com",
+            "role": "Developer"
         }
     ],
     "support": {
         "issues": "https://github.com/benjamincrozat/laravel-dropbox-driver/issues"
     },
-    "keywords": [
-        "laravel",
-        "driver",
-        "dropbox"
-    ],
+    "keywords": ["driver", "dropbox", "laravel", "storage"],
+    "require": {
+        "php": "^8.1",
+        "illuminate/contracts": "^9.0",
+        "spatie/flysystem-dropbox": "^2.0"
+    },
+    "require-dev": {
+        "nunomaduro/collision": "^6.0",
+        "orchestra/testbench": "^7.0",
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1",
+        "phpunit/phpunit": "^9.5"
+    },
     "autoload": {
         "psr-4": {
-            "BC\\Laravel\\DropboxDriver\\": "src"
+            "BenjaminCrozat\\Laravel\\Dropbox\\": "src"
         }
     },
     "autoload-dev": {
-        "classmap": [
-            "tests"
-        ]
+        "psr-4": {
+            "BenjaminCrozat\\Laravel\\Dropbox\\Tests\\": "tests"
+        }
     },
-    "require": {
-        "php": "^7.0|^8.0|^9.0",
-        "spatie/flysystem-dropbox": "^1.2|^2.0"
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
     },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5",
-        "orchestra/testbench": "^6.13"
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "BC\\Laravel\\DropboxDriver\\ServiceProvider"
+                "BenjaminCrozat\\Laravel\\Dropbox\\DropboxServiceProvider"
             ]
         }
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
     },
     "minimum-stability": "dev",
     "prefer-stable": true

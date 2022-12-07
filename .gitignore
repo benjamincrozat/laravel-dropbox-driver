@@ -1,8 +1,6 @@
 .DS_Store
-.env
-.idea
-.phpintel
 .phpunit.result.cache
 composer.lock
+phpunit.xml
 Thumbs.db
 vendor

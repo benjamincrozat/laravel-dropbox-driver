@@ -1,7 +1,12 @@
-[![Test](https://github.com/benjamincrozat/laravel-dropbox-driver/actions/workflows/test.yml/badge.svg)](https://github.com/benjamincrozat/laravel-dropbox-driver/actions/workflows/test.yml)
+[![Test](https://github.com/benjamincrozat/laravel-dropbox-driver/actions/workflows/run-tests.yml/badge.svg)](https://github.com/benjamincrozat/laravel-dropbox-driver/actions/workflows/run-tests.yml)
 [![Latest Stable Version](https://poser.pugx.org/benjamincrozat/laravel-dropbox-driver/v/stable)](https://packagist.org/packages/benjamincrozat/laravel-dropbox-driver)
 [![License](https://poser.pugx.org/benjamincrozat/laravel-dropbox-driver/license)](https://packagist.org/packages/benjamincrozat/laravel-dropbox-driver)
 [![Total Downloads](https://poser.pugx.org/benjamincrozat/laravel-dropbox-driver/downloads)](https://packagist.org/packages/benjamincrozat/laravel-dropbox-driver)
+
+## Requirements
+
+- Laravel 9+
+- PHP 8.1+
 
 ## Documentation
 

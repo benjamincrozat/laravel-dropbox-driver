@@ -1,25 +1,16 @@
 <?php
 
-use Illuminate\Foundation\Application;
+namespace BenjaminCrozat\Laravel\Dropbox\Tests;
 
-abstract class TestCase extends Orchestra\Testbench\TestCase
+use Orchestra\Testbench\TestCase as Orchestra;
+use BenjaminCrozat\Laravel\Dropbox\DropboxServiceProvider;
+
+class TestCase extends Orchestra
 {
-    protected function getEnvironmentSetUp($app)
-    {
-        if (file_exists(__DIR__ . '/../.env')) {
-            (new Dotenv\Dotenv(__DIR__ . '/..'))->load();
-        }
-
-        $app['config']->set('filesystems.disks.dropbox', [
-            'driver' => 'dropbox',
-            'token'  => env('DROPBOX_TOKEN'),
-        ]);
-    }
-
     protected function getPackageProviders($app)
     {
         return [
-            BC\Laravel\DropboxDriver\ServiceProvider::class,
+            DropboxServiceProvider::class,
         ];
     }
 }
