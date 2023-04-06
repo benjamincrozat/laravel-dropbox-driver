@@ -12,6 +12,13 @@
 
 The documentation is available here: [Laravel Dropbox Driver package: how to use it](https://benjamincrozat.com/laravel-dropbox-driver)
 
+## Other packages
+
+I created new packages using AI to save you days of tedious work:
+- [Smousss Factorize](https://github.com/smousss/laravel-factorize), that helps you generate Laravel factories in seconds, without annotations
+- [Smousss Globalize](https://github.com/smousss/laravel-globalize), that helps you internationalize Laravel projects in seconds by wrapping up text inside the `__()` helper
+- [Smousss Novalize](https://github.com/smousss/laravel-novalize), that helps you generate Laravel Nova resources in seconds, without annotations
+
 ## License
 
 [WTFPL](http://www.wtfpl.net/about/)
