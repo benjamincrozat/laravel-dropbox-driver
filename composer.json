@@ -1,5 +1,5 @@
 {
-    "name": "benjamincrozat/laravel-dropbox-driver",
+    "name": "skills-up/laravel-dropbox-driver",
     "description": "Dropbox storage driver for Laravel.",
     "homepage": "https://github.com/benjamincrozat/laravel-dropbox-driver",
     "license": "WTFPL",
